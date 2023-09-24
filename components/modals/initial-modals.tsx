@@ -53,7 +53,7 @@ export const InitialModal = () => {
 
 
     return (
-        <Dialog open={true}>
+        <Dialog open>
             <DialogContent className="bg-white text-black p-0 overflow-hidden">
                 <DialogHeader className="pt-8 px-6">
                     <DialogTitle className="text-2xl text-center font-bold">
@@ -92,20 +92,18 @@ export const InitialModal = () => {
                                                     
                                                     />
                                                 </FormControl>
-
                                             </FormItem>
-                                        )}
-                    
-                                    />
-
-                                    
-
+                                        )}                    
+                                    />                            
                             </div>
+                                <DialogFooter className="bg-gray-100 px-6 py-4">
+                                    <Button variant="primary" disabled={isLoading}>
+                                        Create
+                                    </Button>
 
+                                </DialogFooter>
                         </form>
-
                     </Form>
-
             </DialogContent>
         </Dialog>
     )
