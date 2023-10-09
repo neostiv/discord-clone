@@ -4,7 +4,7 @@ import * as z from "zod";
 import { zodResolver} from "@hookform/resolvers/zod"; 
 import { useForm } from "react-hook-form"; 
 import { useEffect, useState } from "react";
-import { Fileupload } from "@/components/file-upload";
+import { FileUpload } from "@/components/file-upload";
 
 //this comes from shadcn
 import { 
@@ -15,7 +15,7 @@ import {
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog"
-//this comes from shadcn
+//this comes from shadcn    
 import { 
     Form,
     FormControl,
@@ -88,7 +88,7 @@ export const InitialModal = () => {
                                         render={({field}) => (
                                             <FormItem>
                                                 <FormControl>
-                                                    <Fileupload 
+                                                    <FileUpload 
                                                         endpoint="serverImage"
                                                         value={field.value}
                                                         onChange={field.onChange}
